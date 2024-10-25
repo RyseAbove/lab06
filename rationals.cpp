@@ -48,7 +48,11 @@ Rational Rational::operator*(const Rational& other) const {
 // FІХМΕ: implement this method
 Rational Rational::operator+(const Rational& other) const {
   // return a new Rational that is the result of adding the current object with other
+  Rational result;
 
+  result.numer = numer + other.numer;
+  result.denom = denom + other.denom;
+  
   return Rational(0, 0);
 }
 
